@@ -1,0 +1,29 @@
+var Application = function(args){
+    var app = {};
+    app.email = args.email;
+    app.password = args.password;
+    app.confirm = args.confirm;
+    app.status = "pending";
+    app.message = null;
+
+    app.isValid = function(){
+        return app.status == "validated";
+    };
+
+    app.isInvalid = function(){
+        return !isValid();
+    };
+
+    app.validated = function(){
+        app.status = "validated";
+    };
+
+    app.setInvalid = function(message){
+        app.status = "Invalid";
+        app.message = message;
+    };
+
+    return app;
+};
+
+module.exports = Application;
