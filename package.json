@@ -1,0 +1,12 @@
+{
+  "name": "Botafogo-membership",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "should": "~5.0.0",
+    "mocha": "~2.1.0"
+  }
+}
